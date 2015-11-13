@@ -26,10 +26,45 @@ nav {
   max-height: 150px;
   min-height: 100px;
 }
+@media screen and (max-width: 1023px) {
+  nav {
+    height: 15%;
+  }
+}
+nav #menu-btn {
+  float: right;
+  position: relative;
+  display: none;
+  width: 5em;
+  margin-top: 1em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 1023px) {
+  nav #menu-btn {
+    display: block;
+  }
+}
 nav img {
   float: left;
   margin-top: 1.5em;
   padding-left: 3em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  max-width: 100%;
+}
+@media screen and (min-width: 1024px) and (max-width: 1289px) {
+  nav img {
+    max-width: 9.5em;
+  }
+}
+@media screen and (min-width: 300px) {
+  nav img {
+    max-width: 9em;
+    padding-left: 1em;
+  }
 }
 nav ul {
   float: right;
@@ -37,6 +72,20 @@ nav ul {
   text-align: right;
   margin-top: 3.5em;
   padding-right: 3em;
+  font-size: 1em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+@media screen and (min-width: 1024px) and (max-width: 1289px) {
+  nav ul {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 1023px) {
+  nav ul {
+    display: none;
+  }
 }
 nav li {
   display: inline-block;
