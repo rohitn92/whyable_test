@@ -1,0 +1,60 @@
+html,
+body {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/bg.png");
+  font-family: 'Open Sans', sans-serif;
+}
+nav {
+  background: -webkit-linear-gradient(#050505, #353535);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#050505, #353535);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#050505, #353535);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#050505, #353535);
+  /* Standard syntax */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  opacity: 0.5;
+  z-index: 99;
+  height: 20%;
+  max-height: 150px;
+  min-height: 100px;
+}
+nav img {
+  float: left;
+  margin-top: 1.5em;
+  padding-left: 3em;
+}
+nav ul {
+  float: right;
+  list-style: none;
+  text-align: right;
+  margin-top: 3.5em;
+  padding-right: 3em;
+}
+nav li {
+  display: inline-block;
+  border-radius: 1em;
+  margin: 0 0.5em;
+}
+nav a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 2em;
+}
+nav li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#login-btn {
+  border-style: solid;
+  border-radius: 1em;
+  border-width: 0.16em;
+  border-color: white;
+}
