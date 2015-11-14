@@ -8,6 +8,11 @@
 @middletwidth3: ~"screen and (min-width: 701px) and (max-width: 1023px)";
 @leastwidth: ~"screen and (max-width:400px)";
 
+@font-face{
+  font-family: 'Good Vibration';
+  src:url('../fonts/GoodVibrationsScript.ttf');
+}
+
 html, body {
 	font-size: 100%;
 	margin: 0;
@@ -129,6 +134,7 @@ nav{
   padding-bottom: 5%;
    background-repeat: no-repeat;
    background-size: cover;
+   text-align: center;
 
    .subsection{
      width: 100%;
@@ -152,7 +158,53 @@ nav{
 @media @leastwidth {
 padding-top: 50%;
 padding-bottom: 15%;
+}
+}
+
+#content{
 
 }
 
+#search-title{
+  color: white;
+  font-size: 2em;
+
+  span{
+    font-family: 'Good Vibration', cursive;
+    font-size: 1.5em;
+  }
+
+@media @lesswidth {
+  font-size: 1.7em;
+}
+
+@media @lesserwidth{
+  font-size: 1.4em;
+}
+
+@media @leastwidth{
+  font-size: 1em;
+}
+
+
+
+}
+
+
+
+#search-form{
+  padding: 1em 0 2em 0;
+  input{
+    padding: 1em;
+  }
+}
+
+#searchbox{
+  display: inline-flex;
+}
+#register-btns{
+  button{
+    padding: 1em;
+    margin: 0.5em;
+  }
 }

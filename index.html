@@ -4,8 +4,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/countrySelect.min.css">
+
+
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/countrySelect.min.js"></script>
 
 </head>
 
@@ -31,12 +36,32 @@
 <section id="feiseanna">
     <div id="feiseanna-section">
         <div class="subsection">
-            <div class="">
-              HELLO<br \>HELLO<br \>HELLO<br \>HELLO<br \>HELLO<br \>HELLO<br \>HELLO<br \>HELLO<br \>HELLO<br \>HELLO<br \>HELLO<br \>HELLO<br \>
-            </div>
+            <div class="content">
+              <div id="search-title">
+            Find a <span id="fies">Fies</span> happening near you
+          </div>
+          <div id="search-form">
+
+            <input type="text" id="country" />
+            <span id="searchbox">
+            <input type="text" id="search-value" placeholder="Enter fies name, post/zip code or region" />
+            <input type="submit" value="Search" />
+          </span>
+          </div>
+          <div id="register-btns">
+            <button>Register as Parent/Dancer</button>
+            <button>Register as Dance Teacher</button>
+
+          </div>
+        </div>
         </div>
     </div>
 </section>
+
+<script>
+  $("#country").countrySelect();
+</script>
+
 
 </body>
 </html>
