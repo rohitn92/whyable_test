@@ -1,12 +1,24 @@
 @menucolor1: #050505;
 @menucolor2: #353535;
 @white: #ffffff;
+@lesswidth: ~"screen and (min-width: 1024px) and (max-width: 1289px)";
+@lesserwidth: ~"screen and (max-width: 1023px)";
+@middletwidth: ~"screen and (min-width: 401px) and (max-width: 500px)";
+@middletwidth2: ~"screen and (min-width: 501px) and (max-width: 700px)";
+@middletwidth3: ~"screen and (min-width: 701px) and (max-width: 1023px)";
+@leastwidth: ~"screen and (max-width:400px)";
 
 html, body {
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
   font-family: 'Open Sans', sans-serif;
+}
+
+#animate{
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 
@@ -25,8 +37,11 @@ opacity: 0.5;
   height: 20%;
 	max-height: 150px;
   min-height: 100px;
-
-  @media screen and (max-width: 1023px){
+ #animate;
+@media @lesswidth{
+  height: 17.5%;
+}
+  @media @lesserwidth {
 
     height: 15%;
   }
@@ -40,11 +55,8 @@ nav{
     display: none;
     width: 5em;
     margin-top: 1em;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-
-    @media screen and (max-width: 1023px){
+    #animate;
+    @media @lesserwidth {
       display:block;
     }
 
@@ -53,16 +65,14 @@ nav{
     float:left;
     margin-top: 1.5em;
     padding-left: 3em;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    #animate;
     max-width: 100%;
 
-    @media screen and (min-width: 1024px) and (max-width: 1289px){
+    @media @lesswidth{
     max-width: 9.5em;
     }
 
-    @media screen and (min-width: 300px) and (max-width: 1023px){
+    @media @lesserwidth {
       max-width: 9em;
       padding-left: 1em;
     }
@@ -75,14 +85,12 @@ nav{
       margin-top: 3.5em;
       padding-right: 3em;
       font-size: 1em;
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
-      @media screen and (min-width: 1024px) and (max-width: 1289px){
+      #animate;
+      @media @lesswidth {
         font-size: 0.8em;
       }
 
-      @media screen and (max-width: 1023px){
+      @media @lesserwidth {
         display:none;
       }
 
@@ -126,4 +134,25 @@ nav{
      width: 100%;
      background-color: rgba(0,0,0,0.2);
    }
+
+   @media @middletwidth3{
+     padding-top: 20%;
+     padding-bottom: 10%
+   }
+
+@media @middletwidth2{
+  padding-top: 30%;
+  padding-bottom: 10%
+}
+@media @middletwidth{
+  padding-top: 40%;
+  padding-bottom: 10%
+}
+
+@media @leastwidth {
+padding-top: 50%;
+padding-bottom: 15%;
+
+}
+
 }
