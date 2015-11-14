@@ -30,21 +30,22 @@ nav {
   position: fixed;
   opacity: 0.5;
   z-index: 99;
-  height: 20%;
+  height: 10%;
+  min-height: 130px;
   max-height: 150px;
-  min-height: 100px;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 @media screen and (min-width: 1024px) and (max-width: 1289px) {
   nav {
-    height: 17.5%;
+    height: 7%;
   }
 }
 @media screen and (max-width: 1023px) {
   nav {
-    height: 15%;
+    height: 5%;
+    min-height: 100px;
   }
 }
 nav #menu-btn {
@@ -159,6 +160,9 @@ nav li:hover {
     padding-bottom: 15%;
   }
 }
+#content {
+  text-align: center;
+}
 #search-title {
   color: white;
   font-size: 2em;
@@ -194,4 +198,39 @@ nav li:hover {
 #register-btns button {
   padding: 1em;
   margin: 0.5em;
+}
+#featured-slide {
+  background-color: white;
+  display: flex;
+}
+#left {
+  float: left;
+}
+#right {
+  float: right;
+}
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+}
+.card .card-img {
+  padding-top: 75%;
+  background-image: url('../img/image_card.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.card .card-txt {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 7%;
 }
