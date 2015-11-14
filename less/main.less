@@ -236,7 +236,7 @@ padding-bottom: 15%;
     position: relative;
 
 display: flex;
-width: 100%;
+width: 90%;
 margin-left: auto;
 margin-right: auto;
 }
@@ -245,6 +245,14 @@ margin-right: auto;
   float:left;
   background: none;
 border: none;
+img{
+width: 100%;
+
+@media @leastwidth, @lesserwidth{
+  width:200%;
+}
+
+}
 }
 
 .slick-prev:focus{
@@ -259,6 +267,13 @@ border: none;
   float:right;
   background: none;
 border: none;
+img{
+width: 100%;
+@media @leastwidth,  @lesserwidth{
+  width:200%;
+}
+
+}
 }
 
 .slick-dots{
@@ -269,23 +284,15 @@ border: none;
 outline: none;
 margin-left: auto;
 margin-right: auto;
-min-width: 200px;
 float:left;
 padding: 8em 2em 5em 2em;
 
-
-.hidden{
-  display: none;
-}
-
-
-@media @lesswidth{
-  width: 40%;
-}
-
 @media @lesserwidth{
-  width: 70%;
+padding: 8em 1em 5em 2em;  
 }
+
+
+
 
 
   .card-img{

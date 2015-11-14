@@ -214,7 +214,7 @@ nav li:hover {
 .card-content {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -222,6 +222,14 @@ nav li:hover {
   float: left;
   background: none;
   border: none;
+}
+.slick-prev img {
+  width: 100%;
+}
+@media screen and (max-width:400px), screen and (max-width: 1023px) {
+  .slick-prev img {
+    width: 200%;
+  }
 }
 .slick-prev:focus {
   outline: none;
@@ -234,6 +242,14 @@ nav li:hover {
   background: none;
   border: none;
 }
+.slick-next img {
+  width: 100%;
+}
+@media screen and (max-width:400px), screen and (max-width: 1023px) {
+  .slick-next img {
+    width: 200%;
+  }
+}
 .slick-dots {
   display: none;
 }
@@ -241,21 +257,12 @@ nav li:hover {
   outline: none;
   margin-left: auto;
   margin-right: auto;
-  min-width: 200px;
   float: left;
   padding: 8em 2em 5em 2em;
 }
-.card .hidden {
-  display: none;
-}
-@media screen and (min-width: 1024px) and (max-width: 1289px) {
-  .card {
-    width: 40%;
-  }
-}
 @media screen and (max-width: 1023px) {
   .card {
-    width: 70%;
+    padding: 8em 1em 5em 2em;
   }
 }
 .card .card-img {
