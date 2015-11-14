@@ -28,16 +28,14 @@ html, body {
 
 
 nav{
-  background: -webkit-linear-gradient(@menucolor1, @menucolor2); /* For Safari 5.1 to 6.0 */
- background: -o-linear-gradient(@menucolor1, @menucolor2); /* For Opera 11.1 to 12.0 */
- background: -moz-linear-gradient(@menucolor1, @menucolor2); /* For Firefox 3.6 to 15 */
- background: linear-gradient(@menucolor1, @menucolor2); /* Standard syntax */
+
+ //background: linear-gradient(@menucolor1, @menucolor2); /* Standard syntax */
+background-color: rgba(0, 0, 0, 0.3);
  padding: 0;
  margin: 0;
 width: 100%;
 top:0;
 position: fixed;
-opacity: 0.5;
 	z-index: 99;
   height: 20%;
   min-height: 130px;
@@ -369,4 +367,86 @@ background-position: top left;
   @media screen and (max-width: 700px){
     font-size: 1.5em;
   }
+}
+
+
+#footer-section{
+  background-image: url("../img/bg.png");
+
+  padding: 5% 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+   color: white;
+   hr{
+     width:70%;
+     margin-left: 15%;
+   }
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#join-title{
+  width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
+  p{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}}
+
+.column{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 700px){
+    width: 90%;
+  }
+
+  ul{
+    display: inline-block;
+    list-style: none;
+    font-size: 1.5vw;
+
+    padding: 0;
+    color:white;
+    @media screen and (max-width: 700px){
+      font-size: 1.25em;
+    }
+
+    .list-title{
+      color: limegreen;
+    }
+    li{
+      text-align:left;
+    }
+  }
+
+}
+
+.a-line{
+    width:70%;
+    text-align:center;
+    line-height:1.2em;
+
+}
+
+#social-links{
+  ul{
+  list-style: none;
+  text-align: center;
+  padding:0
+}
+li{
+  display: inline-block;
+}
 }
