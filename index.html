@@ -3,14 +3,16 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" href="css/countrySelect.min.css">
 
+  <link rel="stylesheet" href="css/countrySelect.min.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/countrySelect.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 
 </head>
 
@@ -60,9 +62,7 @@
 
 <section id="featured">
     <div id="featured-slide">
-      <div id="left">
-      <img id= "goleft" src = "img/left.png" onclick="moveLeft()">
-    </div>
+
             <div class="card-content">
         <div class="card">
         <div class="card-img"><div class="card-txt">HELLO</div></div>
@@ -73,15 +73,55 @@
 <div class="card">
 <div class="card-img"><div class="card-txt">HELLO</div></div>
 </div>
+<div class="card">
+<div class="card-img"><div class="card-txt">HELLO</div></div>
+</div>
+<div class="card">
+<div class="card-img"><div class="card-txt">HELLO</div></div>
+</div>
+<div class="card">
+<div class="card-img"><div class="card-txt">HELLO</div></div>
+</div>
         </div>
-<div id="right">
-
-         <img id="goright" src = "img/right.png" onclick="moveRight()">
-    </div></div>
+</div>
 </section>
 
 <script>
   $("#country").countrySelect();
+  $(document).ready(function(){
+  $('.card-content').slick({
+    dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  focusOnSelect: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        focusOnSelect: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        focusOnSelect: false
+      }
+    }
+
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+});
 </script>
 
 
