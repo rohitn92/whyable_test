@@ -19,19 +19,20 @@
 
 <body>
 
-<nav class="">
-  <div>
+<nav>
+  <div class="mynavbar">
     <img src="img/logo.jpg"/>
   <ul>
-    <li><a href="#">FEISEANNA</a></li>
-    <li><a href="#">FAQ'S</a></li>
-    <li><a href="#">BLOG</a></li>
-    <li><a href="#">OUR SERVICES</a></li>
-      <li><a href="#">CONTACT US</a></li>
+    <li><a href="#feiseanna">FEISEANNA</a></li>
+    <li><a href="#featured">FAQ'S</a></li>
+    <li><a href="#events">BLOG</a></li>
+    <li><a href="#about">OUR SERVICES</a></li>
+      <li><a href="#footer">CONTACT US</a></li>
     <li id="login-btn"><a href="#">LOGIN</a></li>
   </ul>
+  <div class="menubar">
 <img id="menu-btn" src="img/menu.svg"></img>
-
+</div>
 
 </div>
 </nav>
@@ -46,7 +47,7 @@
           <div id="search-form" ng-app="ngCountry" ng-controller="CountryController">
 <span >
             <select>
-	<option  ng-repeat = "country in countries" > {{country.name}} </option>
+	<option  ng-repeat = "country in countries" value = "{{country.code}}" > {{country.name}} </option>
 </select>
 </span>
             <span id="searchbox">

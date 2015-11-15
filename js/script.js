@@ -1,4 +1,25 @@
+
 $(document).ready(function(){
+
+  $('.menubar').on('click', function(){
+    $('nav ul').toggleClass('show');
+    console.log('clicked');
+  });
+
+
+  $('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+
 $('.card-content').slick({
   dots: false,
 infinite: false,
