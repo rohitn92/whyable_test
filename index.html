@@ -5,12 +5,14 @@
 
 
   <link rel="stylesheet" href="css/countrySelect.min.css">
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css"/>
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/countrySelect.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/easy-responsive-tabs.js"></script>
 
 <script src="js/script.js"></script>
 
@@ -29,7 +31,7 @@
       <li><a href="#">CONTACT US</a></li>
     <li id="login-btn"><a href="#">LOGIN</a></li>
   </ul>
-<img id="menu-btn" src="img/testimonial.png"></img>
+<img id="menu-btn" src="img/menu.svg"></img>
 
 
 </div>
@@ -38,13 +40,13 @@
 <section id="feiseanna">
     <div id="feiseanna-section">
         <div class="subsection">
-            <div class="content">
+            <div class="content" id="search-content">
               <div id="search-title">
             Find a <span id="fies">Fies</span> happening near you
           </div>
           <div id="search-form">
 
-            <input type="text" id="country" />
+            <input type="text" class="country" />
             <span id="searchbox">
             <input type="text" id="search-value" placeholder="Enter fies name, post/zip code or region" />
             <input type="submit" value="Search" />
@@ -88,10 +90,32 @@
 
 <section id="events">
     <div id="events-section">
-        <div class="subsection">
-            <div class="content">
-
+        <div class="content" id="events-content">
+            <div id="events-tab">
+              <div id="horizontalTab">
+                <ul class="resp-tabs-list">
+                  <li><a>Tab-1</a></li>
+                  <li class="green-tab"><a>Tab-2</a></li>
+                  <li><a>Tab-3</a></li>
+                  <li><a>Tab-4</a></li>
+                </ul>
+                <div class="resp-tabs-container">
+                  <div>
+                    <p>Section-1</p>
+                  </div>
+                  <div>
+                    <p>Section-2</p>
+                  </div>
+                  <div>
+                    <p>Section-3</p>
+                  </div>
+                  <div>
+                    <p>Section-4</p>
+                  </div>
+                </div>
+              </div>
         </div>
+        <div id="events-slide"> Hello </div>
         </div>
     </div>
 </section>
@@ -101,15 +125,15 @@
     <div id="about-section">
       <div class="about-content">
 <div class="about-circle"></div>
-<div class="about-txt">Hi</div>
+<div class="about-txt">I got my dance school student registered in 10 minutes. It's that easy!<p>Author Name</p></div>
   </div>
   <div class="about-content">
 <div class="about-circle"></div>
-<div class="about-txt">Hello</div>
+<div class="about-txt">I got my dance school student registered in 10 minutes. It's that easy! <p>Author Name</p></div>
 </div>
 <div class="about-content">
 <div class="about-circle"></div>
-<div class="about-txt">Howdy</div>
+<div class="about-txt">I got my dance school student registered in 10 minutes. It's that easy!<p>Author Name</p></div>
 </div>
 </div>
 
@@ -159,7 +183,7 @@
 </section>
 
 <script>
-  $("#country").countrySelect();
+  $(".country").countrySelect();
 
 </script>
 
