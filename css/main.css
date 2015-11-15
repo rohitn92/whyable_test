@@ -58,37 +58,6 @@ nav {
     height: 50px;
   }
 }
-.smaller {
-  background-color: #232627;
-  height: 100px;
-}
-@media screen and (min-width: 1056px) and (max-width: 1289px) {
-  .smaller {
-    height: 85px;
-  }
-}
-@media screen and (max-width: 1055px) {
-  .smaller {
-    height: 50px;
-  }
-}
-.smaller img {
-  margin-top: 0.5em;
-  height: 5.8em;
-  padding-left: 2.8em;
-}
-@media screen and (min-width: 1056px) and (max-width: 1289px) {
-  .smaller img {
-    height: 4.7em;
-  }
-}
-@media screen and (max-width: 1055px) {
-  .smaller img {
-    height: 3em;
-    padding-left: 1em;
-    margin-top: 0.2em;
-  }
-}
 .show {
   max-height: 20em;
   float: right;
@@ -188,6 +157,40 @@ nav a {
 }
 nav li:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.smaller {
+  background-color: #232627;
+  height: 100px;
+}
+@media screen and (min-width: 1056px) and (max-width: 1289px) {
+  .smaller {
+    height: 85px;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .smaller {
+    height: 50px;
+  }
+}
+.smaller ul {
+  padding-top: 2em;
+}
+.smaller img {
+  margin-top: 0.5em;
+  height: 5.8em;
+  padding-left: 2.8em;
+}
+@media screen and (min-width: 1056px) and (max-width: 1289px) {
+  .smaller img {
+    height: 4.7em;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .smaller img {
+    height: 3em;
+    padding-left: 1em;
+    margin-top: 0.2em;
+  }
 }
 #login-btn {
   border-style: solid;
