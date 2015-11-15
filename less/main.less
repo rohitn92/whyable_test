@@ -73,7 +73,7 @@ position: fixed;
 
 
   ul{
-    margin-top: 2em;
+  //  margin-top: 2em;
   }
   img{
     margin-top: 0.5em;
@@ -97,8 +97,11 @@ position: fixed;
 .show{
   max-height: 20em;
   float: right;
+  @media @lesserwidth{
   background-color: @footercolor;
 }
+}
+
 nav{
 
   #menu-btn{

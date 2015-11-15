@@ -72,9 +72,6 @@ nav {
     height: 50px;
   }
 }
-.smaller ul {
-  margin-top: 2em;
-}
 .smaller img {
   margin-top: 0.5em;
   height: 5.8em;
@@ -95,7 +92,11 @@ nav {
 .show {
   max-height: 20em;
   float: right;
-  background-color: #232627;
+}
+@media screen and (max-width: 1055px) {
+  .show {
+    background-color: #232627;
+  }
 }
 nav #menu-btn {
   float: right;
