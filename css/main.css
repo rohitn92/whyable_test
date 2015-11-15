@@ -60,7 +60,7 @@ nav {
   }
 }
 .smaller {
-  background-color: #000000;
+  background-color: #232627;
   height: 100px;
 }
 @media screen and (min-width: 1056px) and (max-width: 1289px) {
@@ -91,11 +91,6 @@ nav {
     height: 4.5em;
     padding-left: 1em;
     margin-top: 1em;
-  }
-}
-@media screen and (max-width: 1055px) {
-  .smaller #menu-btn {
-    height: 4em;
   }
 }
 nav #menu-btn {
@@ -438,7 +433,7 @@ nav li:hover {
   font-weight: bold;
 }
 #footer-section {
-  background-image: url("../img/bg.png");
+  background: #232627;
   padding: 5% 0;
   background-repeat: no-repeat;
   background-size: cover;

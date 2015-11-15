@@ -2,6 +2,7 @@
 @menucolor2: #353535;
 @offwhite: #ECF0F1;
 @myLimeGreen: #C9EA3E;
+@footercolor: #232627;
 @lesswidth: ~"screen and (min-width: 1056px) and (max-width: 1289px)";
 @lesserwidth: ~"screen and (max-width: 1055px)";
 @middletwidth: ~"screen and (min-width: 401px) and (max-width: 500px)";
@@ -58,7 +59,7 @@ position: fixed;
 }
 
 .smaller{
-  background-color: rgba(0, 0, 0, 1);
+  background-color: @footercolor;
   height: 100px;
 
   @media @lesswidth{
@@ -88,9 +89,7 @@ position: fixed;
   }
 
   #menu-btn{
-    @media @lesserwidth {
-    height: 4em;
-    }
+
   }
 }
 nav{
@@ -473,8 +472,8 @@ background-position: top left;
 
 
 #footer-section{
-  background-image: url("../img/bg.png");
 
+background: @footercolor;
   padding: 5% 0;
    background-repeat: no-repeat;
    background-size: cover;
