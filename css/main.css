@@ -1,4 +1,22 @@
 @font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Light.ttf');
+  font-weight: 300;
+  font-style: light;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Semibold.ttf');
+  font-weight: 600;
+  font-style: bold;
+}
+@font-face {
   font-family: 'Good Vibration';
   src: url('../fonts/GoodVibrationsScript.ttf');
 }
@@ -23,7 +41,7 @@ nav {
   position: fixed;
   z-index: 99;
   height: 20%;
-  min-height: 130px;
+  min-height: 80px;
   max-height: 150px;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -40,12 +58,52 @@ nav {
     min-height: 100px;
   }
 }
+.smaller {
+  background-color: #000000;
+  height: 100px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1289px) {
+  .smaller {
+    height: 85px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .smaller {
+    height: 75px;
+  }
+}
+.smaller ul {
+  margin-top: 2em;
+}
+.smaller img {
+  margin-top: 0.5em;
+  height: 5.8em;
+  padding-left: 2.8em;
+}
+@media screen and (min-width: 1024px) and (max-width: 1289px) {
+  .smaller img {
+    height: 4.7em;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .smaller img {
+    height: 4.5em;
+    padding-left: 1em;
+    margin-top: 1em;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .smaller #menu-btn {
+    height: 4em;
+  }
+}
 nav #menu-btn {
   float: right;
   position: relative;
   display: none;
-  width: 5em;
+  height: 4em;
   margin-top: 1em;
+  margin-right: 2em;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -59,20 +117,21 @@ nav img {
   float: left;
   margin-top: 1.5em;
   padding-left: 3em;
+  height: 6.5em;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  max-width: 100%;
 }
 @media screen and (min-width: 1024px) and (max-width: 1289px) {
   nav img {
-    max-width: 9.5em;
+    height: 5em;
   }
 }
 @media screen and (max-width: 1023px) {
   nav img {
-    max-width: 9em;
+    height: 4.5em;
     padding-left: 1em;
+    margin-top: 1em;
   }
 }
 nav ul {

@@ -7,7 +7,9 @@
 @middletwidth2: ~"screen and (min-width: 501px) and (max-width: 700px)";
 @middletwidth3: ~"screen and (min-width: 701px) and (max-width: 1023px)";
 @leastwidth: ~"screen and (max-width:400px)";
-
+@font-face { font-family: 'Open Sans'; src: url('../fonts/OpenSans-Regular.ttf');  font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Open Sans'; src: url('../fonts/OpenSans-Light.ttf');  font-weight: 300; font-style: light; }
+@font-face { font-family: 'Open Sans'; src: url('../fonts/OpenSans-Semibold.ttf');  font-weight: 600; font-style: bold;}
 @font-face{
   font-family: 'Good Vibration';
   src:url('../fonts/GoodVibrationsScript.ttf');
@@ -38,10 +40,9 @@ top:0;
 position: fixed;
 	z-index: 99;
   height: 20%;
-  min-height: 130px;
+  min-height: 80px;
   max-height: 150px;
  #animate;
-
 
 
 @media @lesswidth{
@@ -54,14 +55,51 @@ position: fixed;
   }
 }
 
+.smaller{
+  background-color: rgba(0, 0, 0, 1);
+  height: 100px;
+
+  @media @lesswidth{
+    height: 85px;
+  }
+  @media @lesserwidth {
+
+    height: 75px;
+  }
+
+
+  ul{
+    margin-top: 2em;
+  }
+  img{
+    margin-top: 0.5em;
+    height: 5.8em;
+    padding-left: 2.8em;
+    @media @lesswidth{
+    height: 4.7em;
+    }
+    @media @lesserwidth {
+      height: 4.5em;
+      padding-left: 1em;
+      margin-top: 1em;
+    }
+  }
+
+  #menu-btn{
+    @media @lesserwidth {
+    height: 4em;
+    }
+  }
+}
 nav{
 
   #menu-btn{
     float:right;
     position: relative;
     display: none;
-    width: 5em;
+    height: 4em;
     margin-top: 1em;
+    margin-right: 2em;
     #animate;
     @media @lesserwidth {
       display:block;
@@ -72,16 +110,18 @@ nav{
     float:left;
     margin-top: 1.5em;
     padding-left: 3em;
+    height: 6.5em;
     #animate;
-    max-width: 100%;
+
 
     @media @lesswidth{
-    max-width: 9.5em;
+    height: 5em;
     }
 
     @media @lesserwidth {
-      max-width: 9em;
+    height: 4.5em;
       padding-left: 1em;
+      margin-top: 1em;
     }
 
   }
