@@ -12,6 +12,7 @@
 @font-face { font-family: 'Open Sans'; src: url('../fonts/OpenSans-Regular.ttf');  font-weight: 400; font-style: normal; }
 @font-face { font-family: 'Open Sans'; src: url('../fonts/OpenSans-Light.ttf');  font-weight: 300; font-style: light; }
 @font-face { font-family: 'Open Sans'; src: url('../fonts/OpenSans-Semibold.ttf');  font-weight: 600; font-style: bold;}
+@font-face { font-family: 'Open Sans'; src: url('../fonts/OpenSans-ExtraBold.ttf');  font-weight: 600; font-style: bolder;}
 @font-face{
   font-family: 'Good Vibration';
   src:url('../fonts/GoodVibrationsScript.ttf');
@@ -432,7 +433,7 @@ padding: 8em 1em 5em 2em;
 
   background-image: url("../img/bg.png");
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
    background-repeat: no-repeat;
    background-size: cover;
    text-align: center;
@@ -456,15 +457,82 @@ padding: 8em 1em 5em 2em;
   }
 }
 
-#events-slide{
+.tab-content{
+        height: 17em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.event-row{
+    text-align: left;
+    padding: 0 2em;
+    font-size: 0.7em;
+    span{
+        font-weight: 600;
+        display: block;
+    }
+    img{
+        height: 4em;
+        //padding-left: 60%
+    }
+    
+    hr{
+        background-color: @myLimeGreen;
+        color: @myLimeGreen;
+        height: 1px;
+    }
+}
+
+#blog-slide{
   margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
   background: white;
   width: 35%;
+    height: 18em;
   @media screen and (max-width: 900px) {
     width: 90%;
   }
+}
+
+#blog-slide-title{
+    padding : 2em 0 1em 3em;
+            text-align: left;
+    height: 25%;
+    background: @footercolor;
+    color: white;
+    
+    span{
+        font-weight: 600;
+        display: block;
+    }
+}
+
+#blog-slide-content{
+    height: 65%;
+    background: @offwhite;
+    p{
+        text-align: left;
+        padding: 1em 3em;
+    }
+}
+
+#blog-slide-footer{
+    padding : 0.7em 1em 0.4em 0em;
+    text-align: right;
+    height: 10%;
+    background: @myLimeGreen;
+    font-weight: bolder;
+    font-size: 0.9em;
+    span{
+        
+        vertical-align: sub;
+    }
+    
+    img{
+        max-height: 2em;
+        float: right;
+    }
 }
 
 #about-section{

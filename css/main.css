@@ -17,6 +17,12 @@
   font-style: bold;
 }
 @font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-ExtraBold.ttf');
+  font-weight: 600;
+  font-style: bolder;
+}
+@font-face {
   font-family: 'Good Vibration';
   src: url('../fonts/GoodVibrationsScript.ttf');
 }
@@ -388,7 +394,7 @@ nav li:hover {
 #events-section {
   background-image: url("../img/bg.png");
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -411,17 +417,74 @@ nav li:hover {
     width: 90%;
   }
 }
-#events-slide {
+.tab-content {
+  height: 17em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.event-row {
+  text-align: left;
+  padding: 0 2em;
+  font-size: 0.7em;
+}
+.event-row span {
+  font-weight: 600;
+  display: block;
+}
+.event-row img {
+  height: 4em;
+}
+.event-row hr {
+  background-color: #c9ea3e;
+  color: #c9ea3e;
+  height: 1px;
+}
+#blog-slide {
   margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
   background: white;
   width: 35%;
+  height: 18em;
 }
 @media screen and (max-width: 900px) {
-  #events-slide {
+  #blog-slide {
     width: 90%;
   }
+}
+#blog-slide-title {
+  padding: 2em 0 1em 3em;
+  text-align: left;
+  height: 25%;
+  background: #232627;
+  color: white;
+}
+#blog-slide-title span {
+  font-weight: 600;
+  display: block;
+}
+#blog-slide-content {
+  height: 65%;
+  background: #ecf0f1;
+}
+#blog-slide-content p {
+  text-align: left;
+  padding: 1em 3em;
+}
+#blog-slide-footer {
+  padding: 0.7em 1em 0.4em 0em;
+  text-align: right;
+  height: 10%;
+  background: #c9ea3e;
+  font-weight: bolder;
+  font-size: 0.9em;
+}
+#blog-slide-footer span {
+  vertical-align: sub;
+}
+#blog-slide-footer img {
+  max-height: 2em;
+  float: right;
 }
 #about-section {
   display: flex;
