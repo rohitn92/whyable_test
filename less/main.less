@@ -43,7 +43,7 @@ top:0;
 position: fixed;
 	z-index: 99;
   height: 20%;
-  min-height: 80px;
+  //min-height: 80px;
   max-height: 150px;
  #animate;
 
@@ -53,8 +53,8 @@ position: fixed;
 }
   @media @lesserwidth {
 
-    height: 5%;
-    min-height: 100px;
+    height: 50px;
+  //  min-height: 100px;
   }
 }
 
@@ -67,7 +67,7 @@ position: fixed;
   }
   @media @lesserwidth {
 
-    height: 75px;
+    height: 50px;
   }
 
 
@@ -82,9 +82,9 @@ position: fixed;
     height: 4.7em;
     }
     @media @lesserwidth {
-      height: 4.5em;
+      height: 3em;
       padding-left: 1em;
-      margin-top: 1em;
+      margin-top: 0.2em;
     }
   }
 
@@ -98,8 +98,8 @@ nav{
     float:right;
     position: relative;
     display: none;
-    height: 2em;
-    margin-top: 2em;
+    height: 1em;
+    margin-top: 1em;
     margin-right: 2em;
     #animate;
     @media @lesserwidth {
@@ -120,9 +120,9 @@ nav{
     }
 
     @media @lesserwidth {
-    height: 4.5em;
+    height: 3em;
       padding-left: 1em;
-      margin-top: 1em;
+      margin-top: 0.2em;
     }
 
   }
@@ -180,26 +180,27 @@ nav{
    text-align: center;
 
    .subsection{
+     padding: 2em;
      width: 100%;
      background-color: rgba(0,0,0,0.2);
    }
 
    @media @middletwidth3{
-     padding-top: 20%;
+     padding-top: 17%;
      padding-bottom: 10%
    }
 
 @media @middletwidth2{
-  padding-top: 30%;
+  padding-top: 20%;
   padding-bottom: 10%
 }
 @media @middletwidth{
-  padding-top: 40%;
+  padding-top: 25%;
   padding-bottom: 10%
 }
 
 @media @leastwidth {
-padding-top: 50%;
+padding-top: 30%;
 padding-bottom: 15%;
 }
 }
@@ -430,7 +431,7 @@ width: 30%;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
-
+padding-top: 1em;
 @media screen and (max-width: 900px){
   width: 90%;
 }
@@ -450,8 +451,8 @@ background-repeat: no-repeat;
 background-position: top left;
 
 @media screen and (max-width: 700px){
-  width: 15em;
-  height: 15em;
+  width: 10em;
+  height: 10em;
 }
 }
 .about-txt {
