@@ -178,7 +178,6 @@ nav li:hover {
   text-align: center;
 }
 #feiseanna-section .subsection {
-  padding: 2em;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -240,7 +239,7 @@ nav li:hover {
   padding: 0.9em 1.8em;
 }
 #search-form #searchbox input[type="submit"] {
-  padding: 0.9em 1.8em;
+  padding: 0.9em 0.9em;
   font-size: 1em;
   font-weight: bold;
   background-color: #c9ea3e;
