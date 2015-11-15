@@ -155,14 +155,14 @@ nav .menubar {
     display: inline-block;
   }
 }
-nav a {
+nav li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.menu-links {
   color: white;
   display: inline-block;
   text-decoration: none;
   padding: 0.5em 2em;
-}
-nav li:hover {
-  background-color: rgba(255, 255, 255, 0.1);
 }
 .smaller {
   background-color: #232627;
@@ -180,6 +180,11 @@ nav li:hover {
 }
 .smaller ul {
   padding-top: 2em;
+}
+@media screen and (max-width: 1055px) {
+  .smaller ul {
+    padding-top: 0;
+  }
 }
 .smaller img {
   margin-top: 0.5em;

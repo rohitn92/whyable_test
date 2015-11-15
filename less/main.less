@@ -149,7 +149,13 @@ padding-bottom: 1em;
 
 }
 
-  a{
+
+  li:hover{
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+ .menu-links{
     color: white;
 
     display: inline-block;
@@ -157,10 +163,6 @@ padding-bottom: 1em;
     padding: 0.5em 2em;
   }
 
-  li:hover{
-      background-color: rgba(255, 255, 255, 0.1);
-  }
-}
 .smaller{
   background-color: @footercolor;
   height: 100px;
@@ -176,6 +178,9 @@ padding-bottom: 1em;
 
   ul{
   padding-top: 2em;
+      @media @lesserwidth{
+          padding-top: 0;
+      }
   }
 
   img{
