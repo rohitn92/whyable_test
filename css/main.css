@@ -406,7 +406,7 @@ nav li:hover {
 }
 @media screen and (max-width: 900px) {
   #events-section {
-    padding-bottom: 20%;
+    padding-bottom: 25%;
   }
 }
 #events-content {
