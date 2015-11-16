@@ -404,6 +404,11 @@ nav li:hover {
   background-size: cover;
   text-align: center;
 }
+@media screen and (max-width: 900px) {
+  #events-section {
+    padding-bottom: 20%;
+  }
+}
 #events-content {
   width: 80%;
   margin-left: auto;
